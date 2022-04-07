@@ -1,8 +1,12 @@
 {
-  "name": "weather_cli",
+  "name": "weather_cli_course",
   "version": "1.0.0",
   "description": "nodejs course",
-  "main": "index.js",
+  "main": "weather.js",
+  "bin": {
+    "weather": "weather.js"
+  },
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -13,5 +17,10 @@
     "cli"
   ],
   "author": "Andrii Kulyk",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.26.1",
+    "chalk": "^5.0.1",
+    "dedent-js": "^1.0.1"
+  }
 }
